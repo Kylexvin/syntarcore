@@ -10,7 +10,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <span className="text-white text-xl font-bold" style={{ fontFamily: 'Ethnocentric, sans-serif' }}><h1 style={{ fontFamily: 'Nasalization, sans-serif' }}>SYNTACORE</h1>
+              <span className="text-white text-xl font-bold" style={{ fontFamily: 'Ethnocentric, sans-serif' }}><h1 style={{ fontFamily: 'Nasalization, sans-serif' }}>VINTACORE</h1>
               </span>
             </div>
           </div>

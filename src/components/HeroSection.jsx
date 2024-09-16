@@ -51,7 +51,7 @@ const HeroSection = () => {
   className="text-6xl font-bold mb-4"
   style={{ fontFamily: 'Nasalization, sans-serif' }}
 >
-  SYNTACORE
+  VINTACORE
 </h1>
 
 
