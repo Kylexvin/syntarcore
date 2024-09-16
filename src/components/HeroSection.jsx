@@ -1,18 +1,7 @@
-// src/components/HeroSection.jsx
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { ChevronRight } from 'lucide-react';
 
 const HeroSection = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
   return (
     <div className="relative h-screen w-full bg-black overflow-hidden">
       {/* Background grid */}
@@ -35,25 +24,15 @@ const HeroSection = () => {
         ></div>
       ))}
 
-      {/* Glowing orb following mouse */}
-      <div
-        className="absolute w-64 h-64 bg-blue-500 rounded-full filter blur-3xl opacity-20 transition-all duration-300 ease-out"
-        style={{
-          left: `${mousePosition.x - 128}px`,
-          top: `${mousePosition.y - 128}px`,
-        }}
-      ></div>
-
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
         {/* Title with Nasalization font */}
         <h1
-  className="text-6xl font-bold mb-4"
-  style={{ fontFamily: 'Nasalization, sans-serif' }}
->
-  VINTACORE
-</h1>
-
+          className="text-6xl font-bold mb-4"
+          style={{ fontFamily: 'Nasalization, sans-serif' }}
+        >
+          VINTACORE
+        </h1>
 
         {/* Subtitle with default font */}
         <p className="text-xl mb-8 text-center max-w-2xl">

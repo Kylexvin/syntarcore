@@ -9,10 +9,12 @@ import SEODetailsPage from './components/SEODetailsPage';
 import GraphicDesignDetailsPage from './components/GraphicDesignDetailsPage';
 import BrandingDetailsPage from './components/BrandingDetailsPage';
 import ContactUs from './components/ContactUs'; // Import the ContactUs component
+import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
 
 function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* Add ScrollToTop component here */}
       <NavBar />
       <Routes>
         <Route path="/" element={
