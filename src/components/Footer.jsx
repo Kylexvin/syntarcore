@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h3 className="text-xl font-bold mb-2">Syntacore</h3>
-            <p className="text-gray-400">Revolutionizing the future with cutting-edge AI technology</p>
+            <p className="text-gray-400">Revolutionizing the future with cutting-edge tech services.</p>
           </div>
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
