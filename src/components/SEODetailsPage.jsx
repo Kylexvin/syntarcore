@@ -56,50 +56,12 @@ const SEODetailsPage = () => {
         ))}
       </div>
 
-      {/* Case Studies Section */}
-      <h2 className="mb-6 text-3xl font-semibold text-green-400">Case Studies</h2>
-      <div className="mb-6">
-        <div className="flex flex-wrap gap-4 mb-4">
-          {caseStudies.map((study, index) => (
-            <button
-              key={index}
-              className={`py-2 px-6 rounded-lg font-semibold transition-colors cursor-pointer ${selectedProject?.name === study.name ? 'bg-green-600 text-gray-100' : 'bg-gray-700 text-gray-200 hover:bg-green-500 hover:text-gray-100'}`}
-              onClick={() => setSelectedProject(study)}
-            >
-              {study.name}
-            </button>
-          ))}
-        </div>
-        {selectedProject && (
-          <div className="bg-gray-800 rounded-lg shadow-lg p-6">
-            <h3 className="text-2xl font-bold mb-4 text-green-400">{selectedProject.name}</h3>
-            <p className="mb-4 text-gray-300">{selectedProject.description}</p>
-            <h4 className="font-semibold text-green-300 mb-2">Challenge:</h4>
-            <p className="mb-4 text-gray-300">{selectedProject.challenge}</p>
-            <h4 className="font-semibold text-green-300 mb-2">Solution:</h4>
-            <p className="mb-4 text-gray-300">{selectedProject.solution}</p>
-            <h4 className="font-semibold text-green-300 mb-2">Results:</h4>
-            <ul className="mb-4 list-inside list-disc text-gray-300">
-              {selectedProject.results.map((result, idx) => (
-                <li key={idx}>{result}</li>
-              ))}
-            </ul>
-            <h4 className="font-semibold text-green-300 mb-2">Technologies Used:</h4>
-            <div className="flex flex-wrap gap-2">
-              {selectedProject.technologies.map((tech, idx) => (
-                <span key={idx} className="rounded-full bg-green-600 px-3 py-1 text-sm text-green-100">
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
+   
 
       {/* Contact Section */}
       <div className="mt-12 text-center">
         <h3 className="mb-4 text-2xl font-semibold text-gray-100">Ready to boost your search rankings?</h3>
-        <a href="#contact" className="py-2 px-6 bg-gradient-to-r from-green-500 to-teal-600 text-white rounded-lg hover:from-green-600 hover:to-teal-700 transition-colors">
+        <a href="/contact" className="py-2 px-6 bg-gradient-to-r from-green-500 to-teal-600 text-white rounded-lg hover:from-green-600 hover:to-teal-700 transition-colors">
           Get in Touch
         </a>
       </div>
